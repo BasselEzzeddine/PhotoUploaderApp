@@ -1,0 +1,19 @@
+platform :ios, '9.0'
+
+target 'PhotoUploader' do
+  use_frameworks!
+
+  # Pods for PhotoUploader
+  pod 'Alamofire', '~> 4.7.2'
+  
+  target 'PhotoUploaderTests' do
+    inherit! :search_paths
+    pod 'GCDWebServer', '~> 3.4.2'
+  end
+
+  target 'PhotoUploaderUITests' do
+    inherit! :search_paths
+    pod 'GCDWebServer', '~> 3.4.2'
+  end
+
+end

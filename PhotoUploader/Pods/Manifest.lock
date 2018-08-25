@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.7.2)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - GCDWebServer (~> 3.4.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - GCDWebServer
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+
+PODFILE CHECKSUM: 2eecc88bcee2960f4c2591869745adfffb394aa3
+
+COCOAPODS: 1.5.3
