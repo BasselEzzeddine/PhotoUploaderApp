@@ -29,7 +29,7 @@ class PhotoListViewControllerTests: XCTestCase {
     // MARK: - Methods
     func setupSut() {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        sut = mainStoryboard.instantiateViewController(withIdentifier: "PhotoListViewController") as! PhotoListViewController
+        sut = mainStoryboard.instantiateViewController(withIdentifier: "PhotoListViewController") as? PhotoListViewController
         UIApplication.shared.keyWindow?.rootViewController = sut
     }
     
