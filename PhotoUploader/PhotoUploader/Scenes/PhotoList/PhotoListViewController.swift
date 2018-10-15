@@ -28,6 +28,7 @@ class PhotoListViewController: UIViewController {
     
     // MARK: - Properties
     var output: PhotoListViewControllerOutput?
+    private let configurator = PhotoListConfigurator()
     var photoSourceHandler = PhotoSourceHandler.sharedInstance
     private let numberOfCellsPerRow = 2
     private let minimumSpacingBetweenCellsInRow: CGFloat = 10
@@ -37,7 +38,7 @@ class PhotoListViewController: UIViewController {
     // MARK: - UIViewController
     override func awakeFromNib() {
         super.awakeFromNib()
-        PhotoListConfigurator.sharedInstance.configure(viewController: self)
+        configurator.configure(viewController: self)
     }
     
     override func viewDidLoad() {

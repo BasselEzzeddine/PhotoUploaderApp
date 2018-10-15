@@ -19,9 +19,6 @@ extension PhotoListPresenter: PhotoListInteractorOutput {
 
 class PhotoListConfigurator {
     
-    // MARK: - Properties
-    static let sharedInstance = PhotoListConfigurator()
-    
     // MARK: - Methods
     func configure(viewController: PhotoListViewController) {
         let interactor = PhotoListInteractor()

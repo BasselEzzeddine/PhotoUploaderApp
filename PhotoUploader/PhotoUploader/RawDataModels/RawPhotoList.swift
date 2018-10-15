@@ -9,5 +9,5 @@
 import Foundation
 
 struct RawPhotoList: Decodable {
-    var base64Images: [String]
+    let base64Images: [String]
 }

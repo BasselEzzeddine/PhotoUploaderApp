@@ -14,26 +14,26 @@ enum PhotoListModel {
         }
         
         struct Response {
-            var base64PhotoList: [String]
+            let base64PhotoList: [String]
         }
         
         struct ViewModel {
-            var photoList: [UIImage]?
-            var errorMessage: String?
+            let photoList: [UIImage]?
+            let errorMessage: String?
         }
     }
     
     enum Upload {
         struct Request {
-            var photo: UIImage
+            let photo: UIImage
         }
         
         struct Response {
         }
         
         struct ViewModel {
-            var infoMessage: String?
-            var errorMessage: String?
+            let infoMessage: String?
+            let errorMessage: String?
         }
     }
 }
