@@ -50,16 +50,16 @@ class PhotoListInteractor {
 // MARK: - PhotoListInteractorInput
 extension PhotoListInteractor: PhotoListInteractorInput {
     func fetchPhotoList() {
-        photosWebClient.fetchPhotoList(completionHandler: {
+        photosWebClient.fetchPhotoList(completionHandler: { [weak self]
             (rawPhotoList, success) in
-            self.handleFetchPhotoListResponse(rawPhotoList, success)
+            self?.handleFetchPhotoListResponse(rawPhotoList, success)
         })
     }
     
     func uploadPhoto(request: PhotoListModel.Upload.Request) {
-        photosWebClient.uploadPhoto(request.photo, completionHandler: {
+        photosWebClient.uploadPhoto(request.photo, completionHandler: { [weak self]
             (success) in
-            self.handleUploadPhotoResponse(success)
+            self?.handleUploadPhotoResponse(success)
         })
     }
 }
