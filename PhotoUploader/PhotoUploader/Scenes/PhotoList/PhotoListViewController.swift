@@ -52,9 +52,10 @@ class PhotoListViewController: UIViewController {
     // MARK: - Actions
     @IBAction func button_add_clicked(_ sender: Any) {
         photoSourceHandler.displayPhotoChoosingPopup(viewController: self)
-        photoSourceHandler.imagePickedBlock = { (image) in
+        photoSourceHandler.imagePickedBlock = { [weak self]
+            (image) in
             let request = PhotoListModel.Upload.Request(photo: image)
-            self.output?.uploadPhoto(request: request)
+            self?.output?.uploadPhoto(request: request)
         }
     }
 }
